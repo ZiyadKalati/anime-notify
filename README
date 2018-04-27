@@ -12,14 +12,14 @@ Lynx
 Python 3.6
 
 Lynx is a text-based web browser that makes it easier to extract data from a web page. It can be downloaded with:
-	apt-get install lynx
+		apt-get install lynx
 but on OS X we don't have apt-get so we have to use homebrew instead... which also needs to be installed.
 
 Type this into the terminal:
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 Then:
-	homebrew install lynx
+		homebrew install lynx
 
 And then go download python if you don't have it already.
 
