@@ -1,0 +1,27 @@
+To the otakus with MacBooks and some love for the terminal:
+
+There are certain animes that I wish another season would come out for, but I don't bother keeping track and I completely forget about them. So I created a little program that will search the web and notify me by email if any anime that I'm watching out for has aired or will air this year.
+
+The list of names is placed in the anime_list text file in the assets folder. The names should be simple to make the search more accurate and a newline should be entered after the final list item.
+
+In the "sendNotification.py" script, you should enter your recipient address, and I would say create a quick gmail account to use as the sender email. The password for the sender account needs to be supplied as well in this script file.
+Make sure to also disable 2-step verification for the sender account allow "less secure apps" which can be found in the security settings of the account.
+
+There are a few dependencies:
+Lynx
+Python 3.6
+
+Lynx is a text-based web browser that makes it easier to extract data from a web page. It can be downloaded with:
+	apt-get install lynx
+but on OS X we don't have apt-get so we have to use homebrew instead... which also needs to be installed.
+
+Type this into the terminal:
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Then:
+	homebrew install lynx
+
+And then go download python if you don't have it already.
+
+To run the script, just type in ./animeReminder.sh in the terminal and it will run.
+You can also schedule it to run regularly with launchd or cron, whatever works for you.
