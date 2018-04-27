@@ -6,7 +6,7 @@ CFLAGS = -Wall -std=c99 -pedantic -g
 INCLUDES = -Iinclude
 
 #Other directories
-ABSPATH = /Users/ziyadmoustafa/Documents/anime_notify/anime_notify
+ABSPATH = $(dir $(abspath $(MAKEFILE_LIST)))
 BINDIR = $(ABSPATH)/bin/
 SRCDIR = $(ABSPATH)/src/
 OBJDIR = $(ABSPATH)/obj/
