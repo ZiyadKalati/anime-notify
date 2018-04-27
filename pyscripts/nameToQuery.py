@@ -7,7 +7,7 @@
 """
 
 import os
-pathToHere = os.path.dirname(os.path.realpath(__file__)) + "/assets/"
+pathToHere = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/assets/"
 
 f = open(pathToHere+"anime_list.txt", 'r')
 names = f.readlines()

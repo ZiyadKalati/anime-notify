@@ -7,7 +7,7 @@ The host email address. You can create a random gmail one, that way you don't ha
 change the server info [ie server = smtplib.SMTP("smtp.gmail.com", 587)]
 Make sure to allow for less secure apps on the gmail host address
 """
-pathToHere = os.path.dirname(os.path.realpath(__file__)) + "/assets/"
+pathToHere = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/assets/"
 filePath = pathToHere+"tempData.txt"
 
 # Check if file to read from is empty. If so, then quit

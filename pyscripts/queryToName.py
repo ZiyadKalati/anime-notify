@@ -22,7 +22,7 @@ anime = anime.replace("%3F", "?")
 anime = anime.replace("?q=", "")
 
 
-pathToHere = os.path.dirname(os.path.realpath(__file__)) + "/assets/"
+pathToHere = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/assets/"
 fo = open(pathToHere+"animeName.txt", "w")
 fo.writelines(anime)
 

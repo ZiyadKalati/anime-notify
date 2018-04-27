@@ -6,7 +6,7 @@
 """
 
 import os
-pathToHere = os.path.dirname(os.path.realpath(__file__)) + "/assets/"
+pathToHere = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "/assets/"
 
 fo = open(pathToHere+"outputData.txt", "r")
 fn = open(pathToHere+"tempData.txt", "r")
