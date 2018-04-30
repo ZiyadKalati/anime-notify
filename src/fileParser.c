@@ -44,6 +44,8 @@ int searchName(FILE *htmlPage, char *showName)
     if ( compare( lineInput, showName ) )
         return found = 1;
 
+    rewind( htmlPage );
+
     htmlPage = filePointerScroll( htmlPage, lineInput, "Synonyms:" );
     cleanString( lineInput );
     if ( compare( lineInput, showName ) )

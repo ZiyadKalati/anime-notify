@@ -2,11 +2,13 @@
 CC = gcc
 CFLAGS = -Wall -std=c99 -pedantic -g
 
+#Get absolute path to this makefile
+ABSPATH = $(dir $(abspath $(MAKEFILE_LIST)))
+
 #Directories where the header files reside
 INCLUDES = -Iinclude
 
 #Other directories
-ABSPATH = $(dir $(abspath $(MAKEFILE_LIST)))
 BINDIR = $(ABSPATH)/bin/
 SRCDIR = $(ABSPATH)/src/
 OBJDIR = $(ABSPATH)/obj/
